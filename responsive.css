@@ -1,0 +1,9 @@
+@media (max-width: 768px) {
+    .noticias {
+        flex-direction: column;
+    }
+
+    .multimedia {
+        flex-direction: column;
+    }
+}

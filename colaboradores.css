@@ -1,0 +1,241 @@
+/* Reset básico */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.5;
+}
+
+
+header {
+    background-color: #00923f; /* Verde del encabezado */
+    padding: 1px;  /* ajusta el ancho de la franja verde */
+    display: flex;
+    justify-content:space-between;
+    text-align: center;
+    align-items:center;
+}
+
+header .logo img {
+    height: 100px; /* Tamaño del logo y slogan */
+    
+}
+
+nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+}
+
+nav li {
+    margin-right: 20px;
+}
+
+nav a {
+    text-decoration: none;
+    color: #fff;
+}
+
+/* Estilos para el contenedor de búsqueda */
+.search-bar {
+    position: relative;
+    width: 200px; /*ancho cajon de busqueda*/
+    max-width: 100%;
+    border: 1px solid #333;
+    border-radius: 20px; /* Bordes redondeados */
+    background-color: #ffff; /* Fondo del cajon buscar*/
+}
+
+/* Estilo del campo de entrada */
+.search-input {
+    width: 100%;
+    padding: 10px 40px 10px 10px; /* Aumenta el padding a la derecha para el ícono */
+    border: none;
+    border-radius: 20px; /* Igual que el contenedor */
+    background: transparent;
+    color: #0c0c0c; /* Color del texto */
+    font-size: 16px;
+    outline: none;
+}
+
+/* Estilo del botón de búsqueda */
+.search-button {
+    position: absolute;
+    right: 10px; /* Alinea el ícono a la derecha */
+    top: 50%;
+    transform: translateY(-50%); /* Centra verticalmente */
+    background: none;
+    border: none;
+    cursor: pointer;
+    padding: 0;
+    
+}
+
+/* Ajustes para la imagen de la lupa */
+.icon-lupa {
+    width: 18px; /* Ajusta el tamaño de la imagen */
+    height: 18px;
+}
+
+
+.social-media {
+    margin-top: 10%px; /* Espacio adicional debajo de la barra de búsqueda */
+}
+
+.social-media a {
+    margin: 0 10px;
+}
+
+.social-media img {
+    width: 40px; /* Tamaño de los iconos */
+    height: 40px;
+
+}
+
+* Estilos para el cuerpo */
+main {
+    padding: 20px;
+}
+
+/* Estilo para el contenedor de íconos accesibilidad */
+.additional-icons {
+    position: absolute;
+    bottom:auto; /* Ajuste de posición desde el borde inferior */
+    right: 0px; /* Ajuste de posición desde el borde derecho */
+    display: center; /*centra los iconos*/
+    flex-direction: column;
+    gap: 5px; /* Espacio entre los íconos */
+    text-align: center;
+    color: #791818;               /* Color del título, ajusta según tu diseño */
+    
+}
+
+.additional-icons img {
+    width: 40px;      /*tamaño iconos accesibilidad*/
+    height: 40px;
+    text-align: center;
+    
+}
+
+/* Estilo para la sección Noticias centra los iconos y titulo al centro*/
+.noticias {
+    text-align: center;
+    margin: 20px;
+} 
+
+/* Centrar el título de Noticias */
+.titulo-noticias {
+    font-size: 2em;            /* Tamaño más grande para destacar */
+    font-weight: bold ;
+    margin-bottom: 20px;       /* Espacio debajo del título */
+    color: #333;               /* Color del título, ajusta según tu diseño */
+}
+
+/* Contenedor para las noticias en fila */
+.noticias-row {
+    display: flex;
+    flex-direction:row; 
+    justify-content: center;
+    gap: 20px;                           /* Espacio entre cada noticia */
+    max-width: 100%;
+}
+
+/* Estilo individual para cada noticia */
+.noticia {
+    width: 300px;
+    text-align: center;        /* Centrar el contenido dentro de cada noticia */
+    margin: 90px;              /* Espacio entre los elementos */
+    
+}
+
+.noticia img {
+    width:100%;          /* Tamaño de la imagen, ajusta según necesidad */
+    margin-bottom: 10px;       /* Espacio debajo de la imagen */
+    height: auto;
+    
+}
+
+/*centra los titulos de multimedia y eventos al centro*/
+.multimedia div {
+    text-align:center; /*centra texto galeria y eventos*/
+}
+
+/*centra los iconos de multimedia y eventos al centro*/
+.multimedia {
+    padding: 50px;
+    display:flex;
+    justify-content: center;
+}
+
+
+/*genera el espacio entre las imagenes de multimedia y eventos*/
+.multimedia img { 
+    width: 80%;  /* Tamaño de los iconos */
+    height: auto;
+
+}
+
+/*genera el cajon verde de ingresar y da color al texto*/
+button {
+    background-color: #39B54A;
+    color: #f70af7;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 50px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+/*formulario*/
+form {
+    background: #cac8c8;
+    padding: 50px; 
+    border-radius: 10px; /*borde curvos esquinas del cuadro*/
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /*cuadro*/
+    width: 400px; /*tamaño del cuadro de formulario*/
+    
+}
+
+label {
+    display: block;
+    margin-bottom: 0px; /*margen o esacio entre el titulo y el cajo*/
+    font-weight: bold; /*titulos cajones en negrilla*/
+}
+
+input, textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 20px;
+}
+
+button {
+    background-color: #39B54A;
+    color: #f70af7;
+    padding: 15px 25px;
+    border: none;
+    cursor: pointer;
+}
+
+footer {
+    background-color: #00923f;
+    padding: 1px;
+    display: flex;
+    justify-content:space-between;
+    text-align:justify;
+    align-items: center;
+}
+
+footer .logo img {
+    height: 100px; /* Tamaño del logo y slogan */
+} 
+
+footer .social img {
+    width: 40px;
+    margin-right: 20px;
+    height: 40px;
+}
